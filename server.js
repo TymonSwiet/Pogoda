@@ -11,7 +11,7 @@ const https = require("https");
 //II
 app.set("view engine", "ejs");
 app.use(express.static("public"));
-app.listen(3001, function () {
+app.listen(process.env.PORT || 3001, function () {
     console.log("sever started on port 3000");
 });
 
